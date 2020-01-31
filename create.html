@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>CoreBase Solutions</title>
+</head>
+<body style="background-color: #e3f2fd;">
+    <!-- nav bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand mr-5" href="http://www.corebase.co.ke">CoreBase Solutions</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ml-5" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="create.html">Create Customer </a>
+            <a class="nav-item nav-link" href="#">Customer Invoice</a>
+            <a class="nav-item nav-link" href="#">Credit Note</a>
+            <a class="nav-item nav-link" href="#">Customer Journals</a>
+            <a class="nav-item nav-link ml-5" href="index.html">Logout</a>
+          </div>
+        </div>
+      </nav>
+      <!-- nav bar -->
+    <div class="container col-7 mt-5">
+        
+        <!--form-->
+        <div class="jumbotron" style="background-color: #e3f2fd;">
+            <p class="lead display-4">Create a Customer</p>
+            <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="fname">Firstname</label>
+                    <input type="text" class="form-control" id="fname" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="lname">Lastname</label>
+                    <input type="text" class="form-control" id="lname" required>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="phone">CellPhone</label>
+                      <input type="number" class="form-control" id="phone" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" id="email">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="dob">DOB</label>
+                      <input type="date" class="form-control" id="dob">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="tcode">Town_Code</label>
+                      <select class="custom-select">
+                        <option selected>Select Town Code</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="gcode">Gender_Code</label>
+                      <input type="text" class="form-control" id="gcode">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="ccode">County_Code</label>
+                      <input type="text" class="form-control" id="ccode">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="creditlimit">CreditLimit</label>
+                      <input type="number" class="form-control" id="creditlimit">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label class="ml-5" for="blocked">Blocked:</label>
+                      <div class="form-check ml-5">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                        <label class="form-check-label" for="exampleRadios1">
+                          Block
+                        </label>
+                      </div>
+                      <div class="form-check ml-5">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                          Unblock
+                        </label>
+                      </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+
+            </form>
+        </div>
+    </div>
+    <script type="module" src="./script.js"></script>
+    
+</body>
+</html>
